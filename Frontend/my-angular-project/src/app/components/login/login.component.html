@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="form-card">
+    <img src="../../../assets/profile.png" alt="profile_icon" class="profile-icon">
+    <h2>Inicio de Sesión</h2>
+    <p>Ingresa tus credenciales</p>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <input id="email" formControlName="email" type="email" placeholder="Correo electrónico" />
+        <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error-message">
+          <p>Correo no válido</p>
+        </div>
+      </div>
+      <div class="input-group password-group">
+        <div class="input-pass">
+          <input id="password" formControlName="password" [type]="passwordVisible ? 'text' : 'password'"
+            placeholder="Contraseña" />
+          <span (click)="togglePasswordVisibility()" class="toggle-password">
+            <img [src]="passwordVisible ? '../../../assets/hide-password.png' : '../../../assets/show-password.png'"
+              alt="toggle password visibility" class="eye-icon">
+          </span>
+        </div>
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+          <p>Contraseña no válida</p>
+        </div>
+      </div>
+      <button type="submit" class="submit-button">Iniciar Sesión</button>
+    </form>
+    <p>¿No tienes cuenta? <button (click)="goToRegister()" class="register-button">Regístrate aquí</button></p>
+  </div>
+</div>

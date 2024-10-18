@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #042342;
+  }
+
+  p {
+    font-size: small;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  
+  .error-message {
+    color: rgb(21, 46, 78);
+    font-size: 0.7em;
+    margin-top: 5px;
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+  
+  .error-message p{
+    margin-bottom: 0;
+  }
+  
+  .submit-button {
+    background-color: #0e65c2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #6caff7;
+  }
+  
+  .login-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .password-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .input-pass {
+    width: 112%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .eye-icon {
+    width: 25px;
+    height: auto;
+    display: flex;
+    position: absolute;
+  }
+  
